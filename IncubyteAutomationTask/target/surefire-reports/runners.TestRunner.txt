@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 151.5 s <<< FAILURE! -- in runners.TestRunner
+Sign up and login flow.Create a new user and login successfully -- Time elapsed: 150.7 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.id: firstname (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\jagad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64243}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64243/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd6ddb135df8b2f3749e5a9dd3f9a8f5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at stepDefinitions.SignUpSteps.fillForm(SignUpSteps.java:38)
+	at ✽.I fill the registration form with valid details(file:///D:/MyWorks/IncubeByteTask/src/test/resources/features/SignUp.feature:6)
+
